@@ -50,7 +50,7 @@
         
           <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Suche"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -60,6 +60,55 @@
 </header>
       <div class="outer">
         <section id="main">
+  
+    <article id="post-email-spam-detection" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/12/17/email-spam-detection/" class="article-date">
+  <time datetime="2017-12-17T07:47:42.000Z" itemprop="datePublished">2017-12-17</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/12/17/email-spam-detection/">Email Spam Detection by Classifiers (KNN, Bernoulli Naive Bayes and SVM kernels)</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Source: HW2.1 for Unstructured Data Analytics course in Carnegie Mellon University<br>Instructor: George Chen</p>
+<p>My work:<br><a href="https://gist.github.com/zhuohanl/5e24371130d624d31ca277a78c6b17af" target="_blank" rel="noopener">https://gist.github.com/zhuohanl/5e24371130d624d31ca277a78c6b17af</a></p>
+<p>This project:</p>
+<ul>
+<li>uses a training dataset which contains 1488 ham and 3659 spam emails</li>
+<li>creates feature matrix which is a binary feature matrix which indicates if a word is present in an email (no duplicates)</li>
+<li>applied KNN, Bernoulli Naive Bayes and SVM LinearSVC classifiers (with 5-fold cross validation) on the feature matrix</li>
+<li>compare the results of the three classifiers</li>
+</ul>
+<p>Then:</p>
+<ul>
+<li>improves the accuracy by turning the feature matrix into one which counts the occurrence of a word in an email (with duplicates) and re-applying KNN classifier</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/12/17/email-spam-detection/" data-id="cjbahd74y0000x7v099sfrx9l" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
   
     <article id="post-a-new-draft" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
@@ -75,7 +124,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/12/15/a-new-draft/">Latent Dirichlet Allocation (LDA) Topic Modelling on Mobile Application dataset</a>
+      <a class="article-title" href="/2017/12/15/a-new-draft/">Latent Dirichlet Allocation (LDA) Topic Modelling on Mobile Applications</a>
     </h1>
   
 
@@ -101,7 +150,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/12/15/a-new-draft/" data-id="cjbagr7bo0000w6v00te13a64" class="article-share-link">Teilen</a>
+      <a data-url="http://yoursite.com/2017/12/15/a-new-draft/" data-id="cjbahd75e0004x7v0erehqudv" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/LDA/">LDA</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Latent-Dirichlet-Allocation/">Latent Dirichlet Allocation</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python/">python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/text-analytics/">text analytics</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/topic-modelling/">topic modelling</a></li></ul>
@@ -155,7 +204,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/12/15/a-new-post/" data-id="cjbagr7c5000cw6v0i692iph8" class="article-share-link">Teilen</a>
+      <a data-url="http://yoursite.com/2017/12/15/a-new-post/" data-id="cjbahd75a0001x7v0z50swjch" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python/">python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/spaCy/">spaCy</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/text-analytics/">text analytics</a></li></ul>
@@ -202,7 +251,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/12/15/hello-world/" data-id="cjbagr7c4000bw6v0yarq0t1n" class="article-share-link">Teilen</a>
+      <a data-url="http://yoursite.com/2017/12/15/hello-world/" data-id="cjbahd75b0002x7v0w8unh1vs" class="article-share-link">Share</a>
       
       
     </footer>
@@ -242,7 +291,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archiv</h3>
+    <h3 class="widget-title">Archives</h3>
     <div class="widget">
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a></li></ul>
     </div>
@@ -252,12 +301,16 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">letzter Beitrag</h3>
+    <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
         
           <li>
-            <a href="/2017/12/15/a-new-draft/">Latent Dirichlet Allocation (LDA) Topic Modelling on Mobile Application dataset</a>
+            <a href="/2017/12/17/email-spam-detection/">Email Spam Detection by Classifiers (KNN, Bernoulli Naive Bayes and SVM kernels)</a>
+          </li>
+        
+          <li>
+            <a href="/2017/12/15/a-new-draft/">Latent Dirichlet Allocation (LDA) Topic Modelling on Mobile Applications</a>
           </li>
         
           <li>
