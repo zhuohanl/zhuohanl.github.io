@@ -61,6 +61,120 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-image-segmentation" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/12/18/image-segmentation/" class="article-date">
+  <time datetime="2017-12-18T11:21:28.000Z" itemprop="datePublished">2017-12-18</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/12/18/image-segmentation/">Image Segmentation Using Mask R-CNN</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Source: HW3.2 for Unstructured Data Analytics course in Carnegie Mellon University<br>Instructor: George Chen</p>
+<p>My work:<br><a href="https://gist.github.com/zhuohanl/1d699e909087d934fe5190ae9e21a019" target="_blank" rel="noopener">https://gist.github.com/zhuohanl/1d699e909087d934fe5190ae9e21a019</a></p>
+<p>This project:</p>
+<ul>
+<li>environment<ul>
+<li>AWS GPU instance</li>
+<li>Ubuntu Deep Learning AMI</li>
+<li>p2.xlarge instance</li>
+<li>200GB of disk space.</li>
+<li>uses the conda_tensorflow_p36 Conda environment</li>
+</ul>
+</li>
+<li>packages<ul>
+<li>Cython</li>
+<li>Tensorflow</li>
+<li>Keras and image tools</li>
+<li>OpenCV</li>
+<li>pycoco</li>
+</ul>
+</li>
+<li>loads MaskRCNN model (training mode)</li>
+<li>trains the model from scratch with training dataset which contains 4952 images</li>
+<li>tests the model in image segmentation</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/12/18/image-segmentation/" data-id="cjbc4er3u0005cdv0wezfrrnx" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/AWS/">AWS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Deep-Learning/">Deep Learning</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Image-Analysis/">Image Analysis</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Image-Segmentation/">Image Segmentation</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Mask-R-CNN/">Mask R-CNN</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/">Python</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-Sentiment-Analysis" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/12/17/Sentiment-Analysis/" class="article-date">
+  <time datetime="2017-12-17T07:47:42.000Z" itemprop="datePublished">2017-12-17</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/12/17/Sentiment-Analysis/">Sentiment Analysis on Tweets</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Source: HW3.1 for Unstructured Data Analytics course in Carnegie Mellon University<br>Instructor: George Chen</p>
+<p>My work:<br><a href="https://gist.github.com/zhuohanl/cfe483ccb5d7ea08577c44c05e5ce44d" target="_blank" rel="noopener">https://gist.github.com/zhuohanl/cfe483ccb5d7ea08577c44c05e5ce44d</a></p>
+<p>This project:</p>
+<ul>
+<li>uses a training dataset which contains 1,600,000 tweets</li>
+<li>builds a simple RNN model with:<ul>
+<li>An embedding layer with output dimension 64</li>
+<li>A simple RNN layer</li>
+<li>A dense layer with sigmoid activation function for prediction</li>
+</ul>
+</li>
+<li>builds a LSTM model with same specifications</li>
+<li>applies the models on the training dataset, and then predict semantic labels on the test dataset</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/12/17/Sentiment-Analysis/" data-id="cjbc4er3j0000cdv0fu6ilqug" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Deep-Learning/">Deep Learning</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/LSTM/">LSTM</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/">Python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/RNN/">RNN</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Sentiment-Analysis/">Sentiment Analysis</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Text-Analytics/">Text Analytics</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-email-spam-detection" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/12/17/email-spam-detection/" class="article-date">
@@ -100,9 +214,11 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/12/17/email-spam-detection/" data-id="cjbahd74y0000x7v099sfrx9l" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/12/17/email-spam-detection/" data-id="cjbc4er3t0004cdv0fm6p9vve" class="article-share-link">Share</a>
       
       
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Bernoulli-Naive-Bayes/">Bernoulli Naive Bayes</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Classification/">Classification</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Email-Spam-Detection/">Email Spam Detection</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/KNN/">KNN</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/">Python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SVM-kernel/">SVM kernel</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Text-Analytics/">Text Analytics</a></li></ul>
+
     </footer>
   </div>
   
@@ -150,10 +266,10 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/12/15/a-new-draft/" data-id="cjbahd75e0004x7v0erehqudv" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/12/15/a-new-draft/" data-id="cjbc4er3n0001cdv09awn1ozi" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/LDA/">LDA</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Latent-Dirichlet-Allocation/">Latent Dirichlet Allocation</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python/">python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/text-analytics/">text analytics</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/topic-modelling/">topic modelling</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/LDA/">LDA</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Latent-Dirichlet-Allocation/">Latent Dirichlet Allocation</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/">Python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Text-Analytics/">Text Analytics</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Topic-Modelling/">Topic Modelling</a></li></ul>
 
     </footer>
   </div>
@@ -204,10 +320,10 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/12/15/a-new-post/" data-id="cjbahd75a0001x7v0z50swjch" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/12/15/a-new-post/" data-id="cjbc4er3q0003cdv0fmcph3rq" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python/">python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/spaCy/">spaCy</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/text-analytics/">text analytics</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/">Python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Text-Analytics/">Text Analytics</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/spaCy/">spaCy</a></li></ul>
 
     </footer>
   </div>
@@ -251,7 +367,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/12/15/hello-world/" data-id="cjbahd75b0002x7v0w8unh1vs" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/12/15/hello-world/" data-id="cjbc4er3v0007cdv03c9batr1" class="article-share-link">Share</a>
       
       
     </footer>
@@ -274,7 +390,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/LDA/">LDA</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Latent-Dirichlet-Allocation/">Latent Dirichlet Allocation</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/">python</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/spaCy/">spaCy</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/text-analytics/">text analytics</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/topic-modelling/">topic modelling</a></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/AWS/">AWS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Bernoulli-Naive-Bayes/">Bernoulli Naive Bayes</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Classification/">Classification</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Deep-Learning/">Deep Learning</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Email-Spam-Detection/">Email Spam Detection</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Image-Analysis/">Image Analysis</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Image-Segmentation/">Image Segmentation</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/KNN/">KNN</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/LDA/">LDA</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/LSTM/">LSTM</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Latent-Dirichlet-Allocation/">Latent Dirichlet Allocation</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mask-R-CNN/">Mask R-CNN</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python/">Python</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/RNN/">RNN</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SVM-kernel/">SVM kernel</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Sentiment-Analysis/">Sentiment Analysis</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Text-Analytics/">Text Analytics</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Topic-Modelling/">Topic Modelling</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/spaCy/">spaCy</a></li></ul>
     </div>
   </div>
 
@@ -284,7 +400,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/LDA/" style="font-size: 10px;">LDA</a> <a href="/tags/Latent-Dirichlet-Allocation/" style="font-size: 10px;">Latent Dirichlet Allocation</a> <a href="/tags/python/" style="font-size: 20px;">python</a> <a href="/tags/spaCy/" style="font-size: 10px;">spaCy</a> <a href="/tags/text-analytics/" style="font-size: 20px;">text analytics</a> <a href="/tags/topic-modelling/" style="font-size: 10px;">topic modelling</a>
+      <a href="/tags/AWS/" style="font-size: 10px;">AWS</a> <a href="/tags/Bernoulli-Naive-Bayes/" style="font-size: 10px;">Bernoulli Naive Bayes</a> <a href="/tags/Classification/" style="font-size: 10px;">Classification</a> <a href="/tags/Deep-Learning/" style="font-size: 13.33px;">Deep Learning</a> <a href="/tags/Email-Spam-Detection/" style="font-size: 10px;">Email Spam Detection</a> <a href="/tags/Image-Analysis/" style="font-size: 10px;">Image Analysis</a> <a href="/tags/Image-Segmentation/" style="font-size: 10px;">Image Segmentation</a> <a href="/tags/KNN/" style="font-size: 10px;">KNN</a> <a href="/tags/LDA/" style="font-size: 10px;">LDA</a> <a href="/tags/LSTM/" style="font-size: 10px;">LSTM</a> <a href="/tags/Latent-Dirichlet-Allocation/" style="font-size: 10px;">Latent Dirichlet Allocation</a> <a href="/tags/Mask-R-CNN/" style="font-size: 10px;">Mask R-CNN</a> <a href="/tags/Python/" style="font-size: 20px;">Python</a> <a href="/tags/RNN/" style="font-size: 10px;">RNN</a> <a href="/tags/SVM-kernel/" style="font-size: 10px;">SVM kernel</a> <a href="/tags/Sentiment-Analysis/" style="font-size: 10px;">Sentiment Analysis</a> <a href="/tags/Text-Analytics/" style="font-size: 16.67px;">Text Analytics</a> <a href="/tags/Topic-Modelling/" style="font-size: 10px;">Topic Modelling</a> <a href="/tags/spaCy/" style="font-size: 10px;">spaCy</a>
     </div>
   </div>
 
@@ -306,6 +422,14 @@
       <ul>
         
           <li>
+            <a href="/2017/12/18/image-segmentation/">Image Segmentation Using Mask R-CNN</a>
+          </li>
+        
+          <li>
+            <a href="/2017/12/17/Sentiment-Analysis/">Sentiment Analysis on Tweets</a>
+          </li>
+        
+          <li>
             <a href="/2017/12/17/email-spam-detection/">Email Spam Detection by Classifiers (KNN, Bernoulli Naive Bayes and SVM kernels)</a>
           </li>
         
@@ -315,10 +439,6 @@
         
           <li>
             <a href="/2017/12/15/a-new-post/">Use spaCy to perform Frequency Analysis and Co-occurrence Analysis on text corpus</a>
-          </li>
-        
-          <li>
-            <a href="/2017/12/15/hello-world/">Hello World</a>
           </li>
         
       </ul>
